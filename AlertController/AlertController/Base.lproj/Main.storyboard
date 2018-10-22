@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="U7a-co-Xv5">
+    <device id="retina6_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment version="4352" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ho5-60-aDq">
+            <objects>
+                <viewController id="U7a-co-Xv5" customClass="ViewController" customModule="AlertController" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Q7c-lp-dwu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rCQ-3d-1Q6">
+                                <rect key="frame" x="156.66666666666666" y="433" width="100.99999999999997" height="30"/>
+                                <state key="normal" title="AlertController"/>
+                                <connections>
+                                    <action selector="alertControllerTapped:" destination="U7a-co-Xv5" eventType="touchUpInside" id="SQy-Yz-Rgt"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ByX-dz-VGs">
+                                <rect key="frame" x="15" y="59" width="384" height="0.0"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ByX-dz-VGs" firstAttribute="top" secondItem="efW-CA-Ja1" secondAttribute="top" constant="15" id="ZfM-3H-MHm"/>
+                            <constraint firstItem="rCQ-3d-1Q6" firstAttribute="centerX" secondItem="efW-CA-Ja1" secondAttribute="centerX" id="eEi-yM-lpp"/>
+                            <constraint firstItem="ByX-dz-VGs" firstAttribute="leading" secondItem="efW-CA-Ja1" secondAttribute="leading" constant="15" id="evr-Ab-KaR"/>
+                            <constraint firstItem="efW-CA-Ja1" firstAttribute="trailing" secondItem="ByX-dz-VGs" secondAttribute="trailing" constant="15" id="h83-eK-N0j"/>
+                            <constraint firstItem="rCQ-3d-1Q6" firstAttribute="centerY" secondItem="Q7c-lp-dwu" secondAttribute="centerY" id="x6h-Lz-GOX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="efW-CA-Ja1"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Ff-wn-jSa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-31" y="215"/>
+        </scene>
+    </scenes>
+</document>
